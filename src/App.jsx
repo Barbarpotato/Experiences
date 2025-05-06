@@ -138,7 +138,7 @@ function Experience() {
                 Experiences
               </Heading>
               <Text fontSize={{ base: 'md', md: 'lg' }} color="#faf9ff" maxW="2xl">
-                Here are some of my past experiences. I always track and evaluate my progress.
+                Explore some of my past experiences, where I’ve consistently tracked and evaluated my progress, ensuring continuous growth and improvement along the way.
               </Text>
             </Box>
           </Box>
