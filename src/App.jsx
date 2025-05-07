@@ -1,7 +1,7 @@
 import { useEffect, Fragment, useState, Suspense } from 'react';
 import { Chrono } from 'react-chrono';
 import { motion } from 'framer-motion';
-import { Heading, Box, Text, Badge } from '@chakra-ui/react';
+import { Heading, Box, Text, Badge, Container } from '@chakra-ui/react';
 import { Navigation, Footer } from 'personal-shared-layout';
 import Loading from './components/Loading';
 
@@ -62,6 +62,7 @@ const content = [
     </ul>
   </Box>,
 ];
+
 function ChronoCustom({ onLoad }) {
   const itemsTimeline = [
     { title: "November 2023 - Present" },
@@ -144,7 +145,7 @@ function Experience() {
           </Box>
         </motion.div>
 
-        <Box minHeight={!isLoaded ? "600px" : "auto"} transition="min-height 0.2s ease">
+        <Container minHeight={!isLoaded ? "600px" : "auto"} maxW="7xl">
           <Suspense fallback={<Loading />}>
             {isLoaded ? (
               <motion.div
@@ -158,7 +159,7 @@ function Experience() {
               <ChronoCustom onLoad={() => setIsLoaded(true)} />
             )}
           </Suspense>
-        </Box>
+        </Container>
       </Box>
 
       {/* Footer transition */}
