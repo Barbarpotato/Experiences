@@ -9,7 +9,7 @@ const content = [
   <Box as="section" m={1} key="kurniawan-mobile" aria-labelledby="kurniawan-heading">
     <Heading id="kurniawan-heading" fontSize="2xl" color={"#faf9ff"}>
       PT. Samamaju Prima
-      <Badge fontSize="0.6em" colorScheme="purple">Software Engineer</Badge>
+      <Badge ml={2} fontSize="0.6em" colorScheme="purple">Software Engineer</Badge>
     </Heading>
     <Text color={"#faf9ff"} opacity={0.5} fontWeight="bold">by Kurniawan Group</Text>
     <Text color={"#faf9ff"} my={4}>November 2023 - Present</Text>
@@ -23,7 +23,7 @@ const content = [
   <Box as="section" m={1} key="nocode-mobile" aria-labelledby="nocode-heading">
     <Heading id="nocode-heading" fontSize="2xl" color={"#faf9ff"}>
       Nocode Magician
-      <Badge fontSize="0.6em" colorScheme="purple">Front-End Developer</Badge>
+      <Badge ml={2} fontSize="0.6em" colorScheme="purple">Front-End Developer</Badge>
     </Heading>
     <Text color={"#faf9ff"} opacity={0.5} fontWeight="bold">by Pipeline Marketing Technology</Text>
     <Text color={"#faf9ff"} my={4}>March 2023 - December 2023</Text>
@@ -35,10 +35,24 @@ const content = [
       <li>Contribute with Wordpress application development with complex task using Oxygen plugin.</li>
     </ul>
   </Box>,
+  <Box as="section" m={1} key="treasurehacks-mobile" aria-labelledby="treasurehacks-heading">
+    <Heading id="treasurehacks-heading" fontSize="2xl" color="#faf9ff">
+      FOCA
+      <Badge ml={2} fontSize="0.6em" colorScheme="purple">Backend Developer</Badge>
+    </Heading>
+    <Text color="#faf9ff" opacity={0.5} fontWeight="bold">by Treasure Hacks</Text>
+    <Text color="#faf9ff" my={4}>January 2023</Text>
+    <Text fontSize="lg" fontWeight="bold" color="#faf9ff" my={4}>The responsibilities include:</Text>
+    <ul style={{ marginLeft: '20px', color: 'white' }}>
+      <li>Developed a prototype application named FOCA to help reduce food waste through donations and discounted food listings.</li>
+      <li>Built RESTful APIs consumed by the frontend and Android team members.</li>
+      <li>Enabled a social impact system where donated food can be claimed for free by anyone in need.</li>
+    </ul>
+  </Box>,
   <Box as="section" m={1} key="yamali-tb-mobile" aria-labelledby="yamali-heading">
     <Heading id="yamali-heading" fontSize="2xl" color={"#faf9ff"}>
       YAMALI TB
-      <Badge fontSize="0.6em" colorScheme="purple">IT & Database</Badge>
+      <Badge ml={2} fontSize="0.6em" colorScheme="purple">IT & Database</Badge>
     </Heading>
     <Text color={"#faf9ff"} opacity={0.5} fontWeight="bold">by Bakrie Center Foundation</Text>
     <Text color={"#faf9ff"} my={4}>August 2022 - December 2022</Text>
@@ -49,10 +63,24 @@ const content = [
       <li>Help Working with Data representation & Data management using MySQL and PHP programming languages.</li>
     </ul>
   </Box>,
+  <Box as="section" m={1} key="appetizer-mobile" aria-labelledby="appetizer-heading">
+    <Heading id="appetizer-heading" fontSize="2xl" color="#faf9ff">
+      ECOREEN
+      <Badge ml={2} fontSize="0.6em" colorScheme="purple">Backend Developer</Badge>
+    </Heading>
+    <Text color="#faf9ff" opacity={0.5} fontWeight="bold">by APPETIZER HACKATHON</Text>
+    <Text color="#faf9ff" my={4}>November 2022</Text>
+    <Text fontSize="lg" fontWeight="bold" color="#faf9ff" my={4}>The responsibilities include:</Text>
+    <ul style={{ marginLeft: '20px', color: 'white' }}>
+      <li>Built a prototype application named ECOREEN for managing carbon in a better ecosystem.</li>
+      <li>Developed the backend using the provided ECOLOOP API to support core features.</li>
+      <li>Collaborated with teammates by integrating API services and backend logic to enhance functionality.</li>
+    </ul>
+  </Box>,
   <Box as="section" m={1} key="bangkit-mobile" aria-labelledby="bangkit-heading">
     <Heading id="bangkit-heading" fontSize="2xl" color={"#faf9ff"}>
       Bangkit Academy
-      <Badge fontSize="0.6em" colorScheme="purple">ML Path Cohort</Badge>
+      <Badge ml={2} fontSize="0.6em" colorScheme="purple">ML Path Cohort</Badge>
     </Heading>
     <Text color={"#faf9ff"} opacity={0.5} fontWeight="bold">by Google, GoTo, Traveloka</Text>
     <Text color={"#faf9ff"} my={4}>February 2022 - July 2022</Text>
@@ -67,7 +95,9 @@ function ChronoCustom({ onLoad }) {
   const itemsTimeline = [
     { title: "November 2023 - Present" },
     { title: "March 2023 - December 2023" },
+    { title: "January 2023" },
     { title: "August 2022 - December 2022" },
+    { title: "November 2022" },
     { title: "February 2022 - July 2022" },
   ];
 
